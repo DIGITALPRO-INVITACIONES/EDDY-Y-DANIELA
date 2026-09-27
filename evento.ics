@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DigitalPro//Boda Eddy Daniela//ES
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:eddy-daniela-20261024@digitalpro-invitaciones
+DTSTAMP:20260927T120000Z
+DTSTART:20261024T170000Z
+SUMMARY:Boda de Eddy y Daniela
+LOCATION:Salón de Eventos Asador Cris\, Calle Ciudad Sevilla 43\, Patern
+ a
+DESCRIPTION:Celebramos nuestra boda. Hora local de Paterna: 19:00.
+URL:https://maps.app.goo.gl/AN8Hi5n5gjksYTMg8
+END:VEVENT
+END:VCALENDAR
