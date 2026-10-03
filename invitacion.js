@@ -1,5 +1,5 @@
 "use strict";
-const RSVP_NUMBER="34643584498";
+const RSVP_NUMBER="34641911387";
 const $=id=>document.getElementById(id),audio=$('music'),musicButton=$('music-button'),reduced=matchMedia('(prefers-reduced-motion: reduce)');
 function syncMusic(){musicButton.textContent=audio.paused?'♫':'Ⅱ';musicButton.setAttribute('aria-label',audio.paused?'Reproducir música':'Pausar música');musicButton.setAttribute('aria-pressed',String(!audio.paused))}audio.addEventListener('play',syncMusic);audio.addEventListener('pause',syncMusic);musicButton.onclick=()=>audio.paused?audio.play().catch(syncMusic):audio.pause();
 $('open').onclick=()=>{$('open').disabled=true;audio.volume=.6;audio.play().catch(syncMusic);$('cover').classList.add('opening');setTimeout(()=>{$('cover').hidden=true;$('invitation').hidden=false;musicButton.hidden=false;scrollTo(0,0);document.querySelector('.hero h1').focus({preventScroll:true});if(!reduced.matches&&'IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.08});document.querySelectorAll('.reveal').forEach(e=>{e.classList.add('waiting');observer.observe(e)})}},reduced.matches?0:1300)};
